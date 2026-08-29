@@ -1,0 +1,35 @@
+﻿Deep Learning Foundations: From Neural Networks to Modern Architectures
+
+Neural networks are computational models loosely inspired by biological neurons. A feedforward neural network consists of layers of interconnected nodes (neurons), where each connection has an associated weight. The network learns by adjusting these weights via backpropagation and gradient descent to minimize a loss function.
+
+Convolutional Neural Networks (CNNs) revolutionized computer vision by applying shared filters over spatial regions of input images. Key innovations include local receptive fields, weight sharing across spatial positions, and pooling for spatial down-sampling. LeNet, AlexNet, VGGNet, and ResNet are landmark CNN architectures.
+
+Recurrent Neural Networks (RNNs) were designed for sequential data. They maintain a hidden state that carries information from previous timesteps. Long Short-Term Memory (LSTM) networks improved on vanilla RNNs by introducing gating mechanisms to control information flow, solving the vanishing gradient problem.
+
+The Transformer model superseded RNNs for most sequence modeling tasks. Unlike RNNs, transformers do not process sequences step-by-step; they use self-attention to compute relationships between all pairs of tokens simultaneously, making them highly parallelizable and effective for long-range dependencies.
+
+Transfer Learning and Fine-tuning
+
+Transfer learning is the practice of pre-training a model on a large dataset and then fine-tuning it on a smaller domain-specific dataset. This dramatically reduces the data and compute needed for downstream tasks.
+
+BERT pioneered this approach for NLP. Pre-trained on Wikipedia and BookCorpus, BERT can be fine-tuned on tasks like question answering, text classification, and named entity recognition with only a small number of additional training examples.
+
+GPT-2 and GPT-3 showed that language models pre-trained at scale develop emergent capabilities: reasoning, code generation, translation, and summarization without task-specific fine-tuning.
+
+Reinforcement Learning from Human Feedback (RLHF) is used to align language models with human preferences. A reward model is trained on human rankings of outputs, then used to optimize the language model via proximal policy optimization (PPO).
+
+Knowledge Distillation
+
+Knowledge distillation transfers knowledge from a large teacher model to a smaller student model. The student is trained to match the teacher's soft output probabilities rather than hard labels, preserving more information about the teacher's learned representations.
+
+DistilBERT uses distillation to produce a 40% smaller BERT with 60% faster inference while retaining 97% of BERT's performance on the GLUE benchmark.
+
+Vector Databases and Approximate Nearest Neighbor Search
+
+Vector databases store dense vector embeddings and support efficient approximate nearest neighbor (ANN) search. They are a core component of RAG pipelines, enabling fast retrieval of semantically similar documents.
+
+FAISS (Facebook AI Similarity Search) is an open-source library for efficient similarity search over large collections of vectors. It supports both exact and approximate search methods including IVF (Inverted File) and HNSW (Hierarchical Navigable Small World) indices.
+
+Chroma and Weaviate are database systems purpose-built for storing and querying embeddings alongside metadata, providing a more feature-rich alternative to raw FAISS.
+
+LangChain is a framework that provides abstractions for building LLM-powered applications, including chains, agents, tools, and retrieval systems. LangGraph extends LangChain with stateful, cyclical multi-agent workflows.

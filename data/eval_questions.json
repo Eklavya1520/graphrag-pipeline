@@ -1,0 +1,62 @@
+﻿[
+  {
+    "question": "What is the attention mechanism in transformers?",
+    "ground_truth": "The attention mechanism allows each token in a sequence to attend to every other token simultaneously, computing weighted representations based on relevance using query, key, and value projections."
+  },
+  {
+    "question": "How does BERT differ from GPT in terms of architecture?",
+    "ground_truth": "BERT uses only the encoder stack of the transformer and is trained bidirectionally using masked language modeling. GPT uses only the decoder stack and performs autoregressive left-to-right language modeling."
+  },
+  {
+    "question": "What pre-training tasks does BERT use?",
+    "ground_truth": "BERT is pre-trained on two tasks: masked language modeling (MLM), where 15% of tokens are randomly masked and predicted, and next sentence prediction (NSP)."
+  },
+  {
+    "question": "What is multi-head attention?",
+    "ground_truth": "Multi-head attention runs several attention operations in parallel, each with different learned projection matrices, allowing the model to jointly attend to information from different representation subspaces."
+  },
+  {
+    "question": "What is Retrieval-Augmented Generation?",
+    "ground_truth": "RAG is a technique that combines a retrieval system with a generative language model. It retrieves relevant documents at inference time and provides them as additional context, improving factual accuracy."
+  },
+  {
+    "question": "How does word2vec differ from transformer-based embeddings?",
+    "ground_truth": "Word2vec produces static embeddings that do not change based on context. Transformers produce contextual embeddings that vary depending on surrounding tokens."
+  },
+  {
+    "question": "What problem did transformers solve compared to RNNs?",
+    "ground_truth": "Transformers process tokens in parallel rather than sequentially, solving the long-range dependency problem that RNNs suffer from, and are much faster to train."
+  },
+  {
+    "question": "What is positional encoding in transformers?",
+    "ground_truth": "Positional encoding adds information about token positions to the input embeddings, since the self-attention mechanism itself is position-agnostic and treats all tokens symmetrically."
+  },
+  {
+    "question": "What is GloVe and how does it learn word representations?",
+    "ground_truth": "GloVe learns word embeddings by factorizing a word co-occurrence matrix, combining global statistical information with local context window information."
+  },
+  {
+    "question": "Who introduced the Transformer model and in what paper?",
+    "ground_truth": "The Transformer was introduced by Vaswani et al. in 2017 in the paper 'Attention Is All You Need'."
+  },
+  {
+    "question": "What is the role of the encoder in a transformer?",
+    "ground_truth": "The encoder processes the input sequence and produces a sequence of representations that the decoder can attend to via cross-attention."
+  },
+  {
+    "question": "What is GPT-3 known for?",
+    "ground_truth": "GPT-3 demonstrated that scaling model size and training data dramatically improves few-shot learning ability, allowing the model to perform tasks from just a few examples."
+  },
+  {
+    "question": "How does knowledge graph RAG differ from standard RAG?",
+    "ground_truth": "Knowledge graph RAG structures retrieved information as entities and relationships, enabling relational traversal and reasoning rather than flat document retrieval."
+  },
+  {
+    "question": "What query language does Neo4j use?",
+    "ground_truth": "Neo4j uses the Cypher query language for graph traversal and querying."
+  },
+  {
+    "question": "What is masked language modeling?",
+    "ground_truth": "Masked language modeling is a pre-training task where 15% of input tokens are randomly masked and the model is trained to predict the original tokens, learning deep bidirectional context."
+  }
+]

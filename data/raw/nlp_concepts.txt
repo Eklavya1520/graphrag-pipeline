@@ -1,0 +1,47 @@
+﻿The Transformer Architecture and Attention Mechanisms
+
+The transformer model was introduced by Vaswani et al. in 2017 in the paper "Attention Is All You Need." It replaced recurrent neural networks as the dominant architecture for natural language processing tasks.
+
+At its core, the transformer relies on a mechanism called self-attention, also known as scaled dot-product attention. Self-attention allows each token in a sequence to attend to every other token simultaneously, computing weighted representations based on relevance. This is fundamentally different from RNNs, which process tokens sequentially and struggle with long-range dependencies.
+
+The attention function maps a query, a set of key-value pairs, to an output. The output is computed as a weighted sum of the values, where the weights are determined by computing the compatibility between the query and each key using a dot product followed by a softmax normalization.
+
+Multi-head attention extends this by running several attention operations in parallel, each with different learned projection matrices. This allows the model to jointly attend to information from different representation subspaces at different positions.
+
+The transformer architecture consists of an encoder and a decoder. The encoder processes the input sequence and produces a sequence of representations. The decoder generates the output sequence, attending to both its own previous outputs and the encoder representations via cross-attention.
+
+Positional encoding is added to the input embeddings to inject information about the position of tokens, since the self-attention mechanism itself is position-agnostic.
+
+BERT: Pre-training with Masked Language Modeling
+
+BERT (Bidirectional Encoder Representations from Transformers) was developed by Google in 2018. It uses only the encoder stack of the transformer. BERT is pre-trained on two tasks: masked language modeling (MLM) and next sentence prediction (NSP).
+
+In MLM, 15% of tokens in the input are randomly masked, and the model is trained to predict the original tokens. This forces the model to learn deep bidirectional context, unlike GPT which only conditions on left context.
+
+BERT was the first model to achieve state-of-the-art results on a wide range of NLP benchmarks simultaneously, including GLUE, SQuAD, and others. It popularized the pre-training and fine-tuning paradigm in NLP.
+
+GPT and Autoregressive Language Modeling
+
+GPT (Generative Pre-trained Transformer) was developed by OpenAI. Unlike BERT, GPT uses only the decoder stack and performs autoregressive language modeling — predicting the next token given all previous tokens. This makes GPT naturally suited for text generation tasks.
+
+GPT-3 demonstrated that scaling model size and training data dramatically improves few-shot learning ability, allowing models to perform tasks from just a few examples without gradient updates.
+
+GPT-4 is a multimodal model capable of processing both text and image inputs, with significantly improved reasoning and instruction-following capabilities compared to its predecessors.
+
+Word Embeddings and Semantic Representations
+
+Before transformers, word2vec and GloVe were the dominant approaches for learning word representations. Word2vec trains shallow neural networks to predict context words, producing dense vector embeddings that capture semantic similarity.
+
+GloVe (Global Vectors) learns embeddings by factorizing a word co-occurrence matrix, combining global statistical information with local context window information.
+
+Transformers replaced static word embeddings with contextual embeddings — representations that change based on the surrounding context, dramatically improving downstream task performance.
+
+Retrieval-Augmented Generation
+
+Retrieval-Augmented Generation (RAG) is a technique that combines a retrieval system with a generative language model. Instead of relying solely on the model's parametric knowledge, RAG retrieves relevant documents at inference time and provides them as additional context.
+
+RAG was introduced by Lewis et al. in 2020 and demonstrated improved factual accuracy compared to pure generative models on knowledge-intensive NLP tasks.
+
+Knowledge graphs extend RAG by structuring retrieved information as entities and relationships, enabling more precise traversal and relational reasoning compared to flat document retrieval.
+
+Neo4j is a popular graph database used for storing knowledge graphs. It uses the Cypher query language for graph traversal. LangChain and LangGraph provide orchestration frameworks for building multi-step LLM pipelines.

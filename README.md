@@ -186,15 +186,9 @@ All tests mock external services (Neo4j + LLM) so they run offline. The test sui
 | RAG Evaluation | Ragas |
 | Embeddings | OpenAI `text-embedding-3-small` |
 
----<img width="766" height="632" alt="Screenshot 2026-09-07 230223" src="https://github.com/user-attachments/assets/dba010b1-327f-4d37-8872-6ad923755b95" />
-<img width="766" height="632" alt="Screenshot 2026-09-07 230223 - Copy" src="https://github.com/user-attachments/assets/a7e516e3-a5cf-4e81-8383-8634b71963dd" />
-<img width="1042" height="872" alt="Screenshot 2026-09-07 230601" src="https://github.com/user-attachments/assets/9fab15b4-2d4a-4098-b3ee-5cee2f00e64e" />
-<img width="1018" height="872" alt="Screenshot 2026-09-07 230612" src="https://github.com/user-attachments/assets/b992ad06-1a41-4ce0-ae65-20f80b9b6f03" />
-<img width="1035" height="871" alt="Screenshot 2026-09-07 230628" src="https://github.com/user-attachments/assets/5c93ee05-7c93-4534-93f2-9c05552224c5" />
-<img width="1027" height="865" alt="Screenshot 2026-09-07 231003" src="https://github.com/user-attachments/assets/1326a91c-6201-413e-8261-03e7e7957314" />
-<img width="1031" height="878" alt="Screenshot 2026-09-07 231016" src="https://github.com/user-attachments/assets/6a02e5d7-1de1-46ad-9f19-75c07ba74b40" />
-
-
+---<img width="766" height="632" alt="Screenshot 2026-09-07 230223 - Copy" src="https://github.com/user-attachments/assets/3056eab2-f224-4806-a32f-df765d6901f8" />
+<img width="1031" height="878" alt="Screenshot 2026-09-07 231016" src="https://github.com/user-attachments/assets/16f1e1a7-5e23-40e2-b43c-0dfd1cf00636" />
+<img width="1027" height="865" alt="Screenshot 2026-09-07 231003" src="https://github.com/user-attachments/assets/0bf59803-9e4e-4f40-af36-045503aa16ed" />
 
 
 ## Known Limitations / Ongoing Work
